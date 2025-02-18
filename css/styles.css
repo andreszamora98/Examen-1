@@ -1,0 +1,33 @@
+/* Estilos personalizados */
+body {
+    font-family: Arial, sans-serif;
+}
+
+#divdinamico {
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #f9f9f9;
+    min-height: 200px;
+}
+/* Estilo para mantener el footer fijo en la parte inferior */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #343a40;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer img {
+    width: 40px;  /* Tamaño pequeño para la imagen */
+    border-radius: 50%;
+}
+
+/* Estilo para el hover de los enlaces del menú */
+.navbar-nav .nav-item .nav-link:hover {
+    background-color: #007bff;  /* Tonalidad azul */
+    color: white;  /* Cambia el color del texto a blanco */
+    transition: background-color 0.3s ease;  /* Transición suave */
+}
