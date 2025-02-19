@@ -14,11 +14,12 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #000000 !important; /* Color negro forzado */
-    color: white;
+    background: linear-gradient(to right, #000000, #000000) !important;
+    color: white !important;
     padding: 10px 0;
     text-align: center;
 }
+
 
 footer img {
     width: 40px;  /* Tamaño pequeño para la imagen */
