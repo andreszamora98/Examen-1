@@ -14,8 +14,8 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #000000;
-    color: rgb(252, 252, 252);
+    background-color: #000000 !important; /* Color negro forzado */
+    color: white;
     padding: 10px 0;
     text-align: center;
 }
