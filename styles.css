@@ -9,7 +9,10 @@ body {
     padding: 20px;
     background-color: #f9f9f9;
     min-height: 200px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
+
 /* Estilo para mantener el footer fijo en la parte inferior */
 footer {
     font-family: 'Poppins', sans-serif;
@@ -21,7 +24,11 @@ footer {
     padding: 10px 0;
     text-align: center;
 }
-
+#divdinamico img {
+    width: 200px;  /* Ajusta el ancho */
+    height: 150px; /* Ajusta la altura fija */
+    object-fit: cover; /* Recorta la imagen sin deformarla */
+}
 
 footer img {
     width: 40px;  /* Tamaño pequeño para la imagen */
