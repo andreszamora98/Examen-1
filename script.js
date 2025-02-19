@@ -1,6 +1,6 @@
 function cargarVista(menu) {
     const divDinamic = document.getElementById('divdinamico');
-    const filePath = `./views/${menu}.html`; // Construye la ruta al archivo HTML
+    const filePath = `${menu}.html`; // Ahora todas las vistas están en la misma ruta
 
     // Usamos fetch para cargar el archivo HTML
     fetch(filePath)
@@ -18,3 +18,4 @@ function cargarVista(menu) {
             divDinamic.innerHTML = `<p>Error: ${error.message}</p>`;
         });
 }
+
