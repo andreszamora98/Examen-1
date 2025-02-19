@@ -15,7 +15,7 @@ footer {
     bottom: 0;
     width: 100%;
     background-color: #0b0b0b;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 10px 0;
     text-align: center;
 }
@@ -31,10 +31,3 @@ footer img {
     color: white;  /* Cambia el color del texto a blanco */
     transition: background-color 0.3s ease;  /* Transición suave */
 }
-/*
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-*/
