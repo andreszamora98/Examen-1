@@ -31,9 +31,10 @@ footer img {
     color: white;  /* Cambia el color del texto a blanco */
     transition: background-color 0.3s ease;  /* Transición suave */
 }
-
+/*
 img {
     display: block;
     max-width: 100%;
     height: auto;
 }
+*/
