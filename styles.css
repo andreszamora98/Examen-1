@@ -1,6 +1,7 @@
 /* Estilos personalizados */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #c3e6ff;
 }
 
 #divdinamico {
@@ -11,6 +12,7 @@ body {
 }
 /* Estilo para mantener el footer fijo en la parte inferior */
 footer {
+    font-family: 'Poppins', sans-serif;
     position: fixed;
     bottom: 0;
     width: 100%;
