@@ -25,7 +25,7 @@ footer {
     text-align: center;
 }
 #divdinamico img {
-    width: 300px;  /* Ajusta el ancho */
+    width: 400px;  /* Ajusta el ancho */
     height: 230px; /* Ajusta la altura fija */
     object-fit: cover; /* Recorta la imagen sin deformarla */
 }
