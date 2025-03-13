@@ -34,10 +34,88 @@ footer img {
     width: 40px;  /* Tamaño pequeño para la imagen */
     border-radius: 50%;
 }
+header {
+    position: fixed; /* o relative si prefieres que no sea fijo */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
 
 /* Estilo para el hover de los enlaces del menú */
 .navbar-nav .nav-item .nav-link:hover {
     background-color: #007bff;  /* Tonalidad azul */
     color: white;  /* Cambia el color del texto a blanco */
     transition: background-color 0.3s ease;  /* Transición suave */
+}
+/* Estilos para el menu lateral */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #343a40;
+    color: #fff;
+    transition: left 0.3s ease;
+    padding: 15px;
+    z-index: 1000;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+/* Efecto hover en los enlaces del submenu */
+.sidebar ul li a:hover {
+    color: #00d1b2; /* Cambia el color al pasar el cursor */
+    text-decoration: underline;
+    cursor: pointer; /* Cambia el cursor a "manita" */
+}
+
+/* Estilos para los encabezados con submenu */
+[data-toggle="submenu"] {
+    cursor: pointer; /* Cambia el cursor a "manita" para los encabezados */
+    padding: 10px;
+    background-color: transparent; /* Fondo inicial */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+[data-toggle="submenu"]:hover {
+    background-color: #00d1b2; /* Fondo al pasar el mouse */
+    color: #fff; /* Cambia el texto a blanco */
+    border-radius: 5px; /* Bordes redondeados para efecto visual */
+}
+
+/* Estilos para los submenus */
+.submenu {
+    display: none;
+    padding-left: 15px;
+}
+
+.submenu.active {
+    display: block;
+}
+
+/* Estilos para el boton de menu */
+#toggleMenu {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 1100;
 }

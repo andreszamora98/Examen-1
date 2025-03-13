@@ -8,35 +8,42 @@
     <link href="styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
-
-
 </head>
 <body>
+    
+    <!-- Header (solo titulo) -->
     <header class="bg-primary text-white text-center">
-        <h1>EX U2</h1>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item"><a class="nav-link" href="#" onclick="cargarVista('info1')">Ingeniería de software</a></li>
-                <li class="nav-item"><a class="nav-link" href="#" onclick="cargarVista('info2')">Modelo Canvas</a></li>
-                <li class="nav-item"><a class="nav-link" href="#" onclick="cargarVista('info3')">NORMA IEEE 830</a></li>
-                <li class="nav-item"><a class="nav-link" href="#" onclick="cargarVista('info4')">UML</a></li>
-                <li class="nav-item"><a class="nav-link" href="#" onclick="cargarVista('info5')">Estudio de factibilidad</a></li>
-                <li class="nav-item"><a class="nav-link" href="#" onclick="cargarVista('SCRUM')">SCRUM</a></li>
-                <li class="nav-item"><a class="nav-link" href="#" onclick="cargarVista('INCREMENTAL')">Incremental</a></li>
-                <li class="nav-item"><a class="nav-link" href="#" onclick="cargarVista('EVOLUTIVO')">Evolutivo</a></li>
-            </ul>
-        </nav>
+        <h3>EX U2</h3>
+        <!-- Boton para abrir/cerrar sidebar -->
+        <button id="toggleMenu" class="btn btn-primary" style="background-color: blueviolet;">Menu</button>
     </header>
-
-    <!-- Div dinámico con imágenes -->
-    <div id="divdinamico" class="container mt-4 text-center" style="margin-bottom: 50px;">
-        <h2>Seleccione una opción del menú</h2>
-        <p>El contenido cambiará aquí cuando seleccione un menú.</p>
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar" style="padding-top: 60px;">
+        <h4 class="text-white" data-toggle="submenu" data-target="submenu1">UNIDAD1</h4>
+        <ul id="submenu1" class="submenu list-unstyled" style="background-color: cadetblue;">
+            <li class="nav-item"><a class="nav-link" href="#" onclick="cargarVista('info1')">Ingenieria de software</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" onclick="cargarVista('info2')">Modelo Canvas</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" onclick="cargarVista('info3')">NORMA IEEE 830</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" onclick="cargarVista('info4')">UML</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" onclick="cargarVista('info5')">Estudio de factibilidad</a></li>
+        </ul>
+        <h4 class="text-white mt-4" data-toggle="submenu" data-target="submenu2">UNIDAD2</h4>
+        <ul id="submenu2" class="submenu list-unstyled" style="background-color: cadetblue;">
+            <li class="nav-item"><a class="nav-link" href="#" onclick="cargarVista('SCRUM')">SCRUM</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" onclick="cargarVista('INCREMENTAL')">Incremental</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" onclick="cargarVista('EVOLUTIVO')">Evolutivo</a></li>
+        </ul>
+    </div>
+    
+    <!-- Div dinamico con imagenes -->
+    <div id="divdinamico" class="container mt-4 text-center" style="margin-bottom: 50px; padding-top: 50px; ">
+        <h2>Seleccione una opcion del menu</h2>
+        <p>El contenido cambiara aqui cuando se seleccione un menu.</p>
         
         <div class="row mt-4">
             <div class="col-md-4">
-                <img src="img1.jpeg" alt="Ingeniería de Software" class="img-fluid">
-                <p>Ingeniería de Software</p>
+                <img src="img1.jpeg" alt="Ingenieria de Software" class="img-fluid">
+                <p>Ingenieria de Software</p>
             </div>
             <div class="col-md-4">
                 <img src="img2.jpeg" alt="Modelo Canvas" class="img-fluid">
@@ -62,7 +69,7 @@
 
     <!-- Footer -->
     <footer class="text-center bg-light">
-        <p>Por: <strong>Morales Hernandez Angel Jared</strong> y <strong>Zamora Nieves Andrés</strong></p>
+        <p>Por: <strong>Morales Hernandez Angel Jared</strong> y <strong>Zamora Nieves Andres</strong></p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
