@@ -14,6 +14,7 @@ body {
 }
 
 /* Estilo para mantener el footer fijo en la parte inferior */
+
 footer {
     font-family: 'Poppins', sans-serif;
     position: fixed;
@@ -24,27 +25,41 @@ footer {
     margin-bottom: -15px;
     text-align: center;
 }
+
+
+
 #divdinamico img {
-    width: 400px;  /* Ajusta el ancho */
-    height: 230px; /* Ajusta la altura fija */
-    object-fit: cover; /* Recorta la imagen sin deformarla */
+    width: 400px;  
+    height: 230px; 
+    object-fit: cover; 
 }
 
 footer img {
-    width: 40px;  /* Tamaño pequeño para la imagen */
+    width: 40px;  
     border-radius: 50%;
 }
-header {
-    position: fixed; /* o relative si prefieres que no sea fijo */
+
+
+/* Estilo personalizado para el header */
+.custom-header {
+    color: white;
+    font-family: 'Montserrat', sans-serif !important; /* Forzar Montserrat */
+    font-size: 36px !important;
+    font-weight: bold !important;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 9999;
+    background-color: #003165 !important; /* Forzar nuevo color */
+    padding: 10px 0;
+    text-align: center;
 }
+
 
 /* Estilo para el hover de los enlaces del menú */
 .navbar-nav .nav-item .nav-link:hover {
-    background-color: #007bff;  /* Tonalidad azul */
+    background-color: #003166;  /* Tonalidad azul */
     color: white;  /* Cambia el color del texto a blanco */
     transition: background-color 0.3s ease;  /* Transición suave */
 }
@@ -55,7 +70,7 @@ header {
     left: -250px;
     width: 250px;
     height: 100%;
-    background: #343a40;
+    background-color: #003165 !important;
     color: #fff;
     transition: left 0.3s ease;
     padding: 15px;
@@ -86,6 +101,8 @@ header {
     color: #00d1b2; /* Cambia el color al pasar el cursor */
     text-decoration: underline;
     cursor: pointer; /* Cambia el cursor a "manita" */
+    padding-top: 10px; /* O usa margin-top si prefieres */
+    margin-top: 10px; /* Espacio extra arriba */
 }
 
 /* Estilos para los encabezados con submenu */
@@ -100,6 +117,7 @@ header {
     background-color: #00d1b2; /* Fondo al pasar el mouse */
     color: #fff; /* Cambia el texto a blanco */
     border-radius: 5px; /* Bordes redondeados para efecto visual */
+    font-weight: bold;
 }
 
 /* Estilos para los submenus */
@@ -118,4 +136,53 @@ header {
     top: 15px;
     left: 15px;
     z-index: 1100;
+}
+
+/* Estiliza el sidebar para permitir scroll si el contenido excede la altura */
+#sidebar {
+    position: fixed;
+    width: 250px; /* Ancho fijo para mantener el diseño */
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    overflow-y: auto; /* Scroll vertical si el contenido es mayor */
+    background-color: #343a40; /* Color de fondo del sidebar */
+    transition: all 0.3s ease;
+}
+
+/* Personaliza el estilo de la barra de desplazamiento */
+#sidebar::-webkit-scrollbar {
+    width: 8px;
+}
+
+#sidebar::-webkit-scrollbar-track {
+    background: #495057;
+    border-radius: 10px;
+}
+
+#sidebar::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+#sidebar::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+/* Estilizar las imágenes de los lenguajes */
+.img-lenguaje {
+    width: 80px !important;   /* Ancho fijo */
+    height: 80px !important;  /* Altura fija para mantener el tamaño */
+    object-fit: contain !important; /* Asegura que la imagen se ajuste sin deformarse */
+    border-radius: 8px; /* Opcional: para bordes redondeados */
+}
+/* Aumentar el tamaño solo para la imagen modelo_relacional.jpg */
+/* Aumentar el tamaño solo para la imagen con clase img-grande */
+/* Estilo para asegurar que la imagen se vea completa */
+.img-grande {
+    width: 100% !important; /* Ocupar todo el ancho del contenedor */
+    max-width: 500px !important; /* No más de 500px de ancho */
+    height: auto !important; /* Mantener proporciones */
+    display: block; /* Evita comportamiento inline */
+    margin: 0 auto; /* Centrar si es necesario */
+    object-fit: contain !important; /* Mantener imagen completa */
+    border-radius: 8px !important; /* Bordes redondeados si se desean */
+    overflow: visible !important; /* Asegura que no haya recorte */
 }

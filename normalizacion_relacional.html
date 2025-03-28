@@ -1,0 +1,115 @@
+<div class="container mt-4">
+    <h2 class="text-center text-primary">Normalización y Modelo Relacional</h2>
+    
+    <!-- Sección de Modelo Relacional -->
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <h4 class="text-secondary mb-3">¿Qué es el Modelo Relacional?</h4>
+            <p class="mt-3">
+                El <strong>Modelo Relacional</strong> es un modelo de bases de datos que organiza 
+                los datos en <strong>tablas</strong> o <strong>relaciones</strong>, donde cada tabla 
+                representa una entidad y cada fila almacena una instancia de esa entidad. 
+                Las tablas están conectadas a través de <strong>claves primarias</strong> y 
+                <strong>claves foráneas</strong> para establecer relaciones entre ellas.
+            </p>
+        </div>
+        <div class="col-md-6">
+            <img src="modelo_relacional.jpg" alt="Modelo Relacional" class="img-grande">
+            <p class="mt-3 text-muted">
+                La imagen representa un ejemplo de modelo relacional donde múltiples tablas están 
+                relacionadas mediante claves primarias y foráneas.
+            </p>
+        </div>
+    </div>
+
+    <!-- Sección de Normalización -->
+    <div class="row mt-5">
+        <div class="col-md-6">
+            <h4 class="text-secondary">¿Qué es la Normalización?</h4>
+            <p class="mt-3">
+                La <strong>Normalización</strong> es un proceso que optimiza el diseño de una base de 
+                datos relacional para eliminar redundancia de datos y asegurar la integridad 
+                de los mismos. La normalización se lleva a cabo mediante una serie de 
+                <strong>formas normales (1NF, 2NF, 3NF)</strong>, que aplican reglas para organizar 
+                los datos en diferentes niveles.
+            </p>
+        </div>
+        <div class="col-md-6">
+            <img src="normalizacion.jpg" alt="Normalización y Modelo Relacional" class="img-grande">
+            <p class="mt-3 text-muted">
+                La normalización reduce la redundancia al dividir tablas y establecer relaciones 
+                entre ellas.
+            </p>
+        </div>
+    </div>
+
+    <!-- Relación entre Normalización y Modelo Relacional -->
+    <div class="row mt-5">
+        <h4 class="text-center text-success">Relación entre Normalización y Modelo Relacional</h4>
+        <p class="mt-3">
+            La <strong>normalización</strong> y el <strong>modelo relacional</strong> están 
+            intrínsecamente relacionados porque la normalización se utiliza para mejorar 
+            el diseño de bases de datos relacionales. Al aplicar la normalización en el 
+            modelo relacional:
+        </p>
+        <ul class="mt-3">
+            <li>
+                <strong>Elimina redundancia:</strong> Las tablas en el modelo relacional 
+                son divididas para reducir la duplicidad de datos.
+            </li>
+            <li>
+                <strong>Mejora la integridad:</strong> Las relaciones definidas por claves 
+                primarias y foráneas mantienen consistencia e integridad referencial.
+            </li>
+            <li>
+                <strong>Facilita la escalabilidad:</strong> Una base de datos bien normalizada 
+                permite realizar consultas más rápidas y fáciles de mantener.
+            </li>
+        </ul>
+    </div>
+
+    <!-- Formas Normales Explicadas -->
+    <div class="row mt-5">
+        <div class="col-md-6">
+            <h4>Formas Normales en el Modelo Relacional</h4>
+            <ul class="list-group">
+                <li class="list-group-item d-flex align-items-center">
+                    
+                    <div>
+                        <strong>Primera Forma Normal (1NF):</strong> Garantiza que todos los valores son atómicos, es decir, 
+                        cada campo contiene un solo valor.
+                    </div>
+                </li>
+                <li class="list-group-item d-flex align-items-center">
+                    
+                    <div>
+                        <strong>Segunda Forma Normal (2NF):</strong> Elimina dependencias parciales y asegura que 
+                        cada columna dependa de la clave principal.
+                    </div>
+                </li>
+                <li class="list-group-item d-flex align-items-center">
+                    
+                    <div>
+                        <strong>Tercera Forma Normal (3NF):</strong> Elimina dependencias transitivas para 
+                        garantizar que no haya datos redundantes.
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <img src="bd_relacional.jpg" alt="Base de Datos Relacional" class="img-grande">
+            <p class="mt-3 text-muted">
+                La aplicación de las formas normales permite mantener la integridad y mejorar 
+                el rendimiento en bases de datos relacionales.
+            </p>
+        </div>
+    </div>
+
+    <div class="mt-4">
+        <h5>Referencia:</h5>
+        <p>
+            Elmasri, R., & Navathe, S. B. (2021). <i>Fundamentals of database systems.</i> Pearson.
+        </p>
+    </div>
+</div>
+

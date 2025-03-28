@@ -3,23 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EX2</title>
+    <title>WIX2</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     
     <!-- Header (solo titulo) -->
-    <header class="bg-primary text-white text-center">
-        <h3>EX U2</h3>
+    <header class="custom-header">
+        <h3>WIX2</h3>
         <!-- Boton para abrir/cerrar sidebar -->
-        <button id="toggleMenu" class="btn btn-primary" style="background-color: blueviolet;">Menu</button>
+        <button id="toggleMenu" class="btn btn-primary" style="background-color: rgb(0, 60, 179); margin-top: -5px">Menú</button>
     </header>
     <!-- Sidebar -->
     <div id="sidebar" class="sidebar" style="padding-top: 60px;">
-        <h4 class="text-white" data-toggle="submenu" data-target="submenu1">UNIDAD1</h4>
+        <h4 class="text-white" data-toggle="submenu" data-target="submenu1">UNIDAD 1</h4>
         <ul id="submenu1" class="submenu list-unstyled" style="background-color: cadetblue;">
             <li class="nav-item"><a class="nav-link" href="#" onclick="cargarVista('info1')">Ingenieria de software</a></li>
             <li class="nav-item"><a class="nav-link" href="#" onclick="cargarVista('info2')">Modelo Canvas</a></li>
@@ -27,18 +28,25 @@
             <li class="nav-item"><a class="nav-link" href="#" onclick="cargarVista('info4')">UML</a></li>
             <li class="nav-item"><a class="nav-link" href="#" onclick="cargarVista('info5')">Estudio de factibilidad</a></li>
         </ul>
-        <h4 class="text-white mt-4" data-toggle="submenu" data-target="submenu2">UNIDAD2</h4>
+        <h4 class="text-white mt-4" data-toggle="submenu" data-target="submenu2">UNIDAD 2</h4>
         <ul id="submenu2" class="submenu list-unstyled" style="background-color: cadetblue;">
             <li class="nav-item"><a class="nav-link" href="#" onclick="cargarVista('SCRUM')">SCRUM</a></li>
             <li class="nav-item"><a class="nav-link" href="#" onclick="cargarVista('INCREMENTAL')">Incremental</a></li>
             <li class="nav-item"><a class="nav-link" href="#" onclick="cargarVista('EVOLUTIVO')">Evolutivo</a></li>
         </ul>
+        <h4 class="text-white mt-4" data-toggle="submenu" data-target="submenu3">UNIDAD 3</h4>
+        <ul id="submenu3" class="submenu list-unstyled" style="background-color: cadetblue;">
+            <li class="nav-item"><a class="nav-link" href="#" onclick="cargarVista('lenguajes_desarrollo')">Lenguajes para el desarrollo de Software</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" onclick="cargarVista('manejadores_bd')">Manejadores de Bases de Datos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" onclick="cargarVista('normalizacion_relacional')">Normalización y modelo relacional</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" onclick="cargarVista('lenguajes_programacion')">Lenguajes de programación</a></li>
+        </ul>
     </div>
     
     <!-- Div dinamico con imagenes -->
     <div id="divdinamico" class="container mt-4 text-center" style="margin-bottom: 50px; padding-top: 50px; ">
-        <h2>Seleccione una opcion del menu</h2>
-        <p>El contenido cambiara aqui cuando se seleccione un menu.</p>
+        <h2>Seleccione una opción del menú</h2>
+        <p>El contenido cambiará aquí cuando seleccione un menú.</p>
         
         <div class="row mt-4">
             <div class="col-md-4">
@@ -69,7 +77,7 @@
 
     <!-- Footer -->
     <footer class="text-center bg-light">
-        <p>Por: <strong>Morales Hernandez Angel Jared</strong> y <strong>Zamora Nieves Andres</strong></p>
+        <p>Por: <strong>Morales Hernández Ángel Jared</strong> y <strong>Zamora Nieves Andrés</strong></p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
