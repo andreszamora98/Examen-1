@@ -22,12 +22,28 @@ function cargarVista(menu) {
 document.addEventListener('DOMContentLoaded', function() {
     var toggleButton = document.getElementById('toggleMenu');
     var sidebar = document.getElementById('sidebar');
+    var overlay = document.getElementById('overlay');
+    var navLinks = document.querySelectorAll('.nav-link'); // Todas las opciones del sidebar
 
+    // Abrir y cerrar sidebar al dar clic en el botón
     toggleButton.addEventListener('click', function() {
         sidebar.classList.toggle('active');
+        overlay.classList.toggle('active');
     });
 
-    // Manejo de submenus
+    // Cerrar sidebar al hacer clic en el overlay
+    overlay.addEventListener('click', function() {
+        cerrarSidebar();
+    });
+
+    // Cerrar sidebar al hacer clic en cualquier enlace del menú
+    navLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+            cerrarSidebar();
+        });
+    });
+
+    // Manejo de submenús
     var menuItems = document.querySelectorAll('[data-toggle="submenu"]');
     menuItems.forEach(function(item) {
         item.addEventListener('click', function(e) {
@@ -37,4 +53,12 @@ document.addEventListener('DOMContentLoaded', function() {
             submenu.classList.toggle('active');
         });
     });
+
+    // Función para cerrar sidebar y overlay
+    function cerrarSidebar() {
+        sidebar.classList.remove('active');
+        overlay.classList.remove('active');
+    }
 });
+
+
